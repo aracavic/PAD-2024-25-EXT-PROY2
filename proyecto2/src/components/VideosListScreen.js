@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './VideosListScreen.css';
 
-// Las mismas categorías que en sugerencias
 const categorias = [
   "Todas",
   "Programación",
@@ -27,14 +26,12 @@ function VideosListScreen() {
     setVideos(guardados);
   }, []);
 
-  // Borrar video guardado
   const borrarVideo = (videoId) => {
     const nuevos = videos.filter(v => v.id.videoId !== videoId);
     setVideos(nuevos);
     localStorage.setItem('videosGuardados', JSON.stringify(nuevos));
   };
 
-  // Añadir o quitar de favoritos
   const toggleFavorito = (videoId) => {
     const nuevos = videos.map(v =>
       v.id.videoId === videoId
@@ -45,15 +42,12 @@ function VideosListScreen() {
     localStorage.setItem('videosGuardados', JSON.stringify(nuevos));
   };
 
-  // Filtrado por categoría (usa video.categoria si la guardas, si no, filtra por título)
   const videosFiltrados = categoriaSeleccionada === "Todas"
     ? videos
     : videos.filter(video => {
-        // Si el video tiene la propiedad 'categoria', filtra por ella
         if (video.categoria) {
           return video.categoria.toLowerCase() === categoriaSeleccionada.toLowerCase();
         }
-        // Si no, filtra por coincidencia en el título
         return (
           video.snippet &&
           video.snippet.title &&
@@ -62,7 +56,7 @@ function VideosListScreen() {
       });
 
   return (
-    <div className="videos-container">
+    <div className="videos-list-container">
       <h2 className="videos-title">Videos Guardados</h2>
       <select
         className="videos-select"

@@ -1,26 +1,32 @@
 .addlink-form {
-  max-width: 400px;
-  margin: 32px auto;
-  padding: 24px;
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px #0001;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #0001;
+  padding: 32px 24px;
+  max-width: 400px;
+  width: 100%;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 
 .addlink-form h2 {
   text-align: center;
-  margin-bottom: 8px;
+  color: #1976d2;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .addlink-input,
 .addlink-select {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #b0b8c1;
   font-size: 1rem;
+  background: #f7fafd;
+  box-shadow: 0 1px 4px #0001;
 }
 
 .addlink-checkbox {
@@ -28,26 +34,55 @@
   align-items: center;
   gap: 8px;
   font-size: 1rem;
+  color: #1976d2;
+  margin-top: 4px;
 }
 
 .addlink-buttons {
   display: flex;
-  gap: 12px;
-  justify-content: center;
-  margin-top: 8px;
+  gap: 10px;
+  margin-top: 12px;
+  justify-content: flex-end;
 }
 
 .addlink-btn {
-  padding: 10px 24px;
+  padding: 10px 0;
   border-radius: 8px;
   border: none;
   background: #1976d2;
   color: #fff;
-  font-weight: bold;
   font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
+  flex: 1 1 0;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.2s;
+}
+
+.addlink-btn:hover {
+  background: #145ea8;
 }
 
 .addlink-btn-cancel {
-  background: #888;
+  background: #e53935;
+  color: #fff;
+}
+
+.addlink-btn-cancel:hover {
+  background: #b71c1c;
+}
+
+@media (max-width: 600px) {
+  .addlink-form {
+    padding: 18px 4vw;
+    max-width: 98vw;
+    margin: 18px auto;
+  }
+  .addlink-form h2 {
+    font-size: 1.08rem;
+  }
+  .addlink-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
