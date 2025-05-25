@@ -1,0 +1,92 @@
+.links-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.links-title {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.links-select {
+  width: 100%;
+  max-width: 300px;
+  margin: 8px auto 16px auto;
+  display: block;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.links-list {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 16px;
+  min-height: 120px;
+}
+
+.links-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.links-list li.favorito {
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.links-categoria {
+  font-size: 0.95em;
+  color: #666;
+}
+
+.links-star {
+  color: gold;
+  margin-left: 4px;
+}
+
+.links-add-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 28px;
+  border-radius: 8px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0002;
+}
+
+.links-fav-btn, .links-del-btn {
+  margin-left: 8px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.95em;
+  cursor: pointer;
+}
+
+.links-fav-btn {
+  background: #ffd600;
+  color: #333;
+}
+
+.links-del-btn {
+  background: #e53935;
+  color: #fff;
+}

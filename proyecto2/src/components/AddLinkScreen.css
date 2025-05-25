@@ -1,0 +1,53 @@
+.addlink-form {
+  max-width: 400px;
+  margin: 32px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px #0001;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.addlink-form h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.addlink-input,
+.addlink-select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.addlink-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.addlink-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.addlink-btn {
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.addlink-btn-cancel {
+  background: #888;
+}

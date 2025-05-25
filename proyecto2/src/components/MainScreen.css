@@ -1,0 +1,101 @@
+.main-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.main-title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.main-list {
+  max-height: 180px;
+  overflow-y: auto;
+  margin-bottom: 16px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.main-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-list li {
+  margin-bottom: 8px;
+}
+
+.main-list a {
+  color: #1976d2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.main-btn {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0002;
+}
+
+.main-btn-green {
+  background: #388e3c;
+}
+
+.video-item {
+  position: relative;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.video-item .video-link {
+  flex: 1 1 auto;
+}
+
+.video-item-buttons {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  gap: 6px;
+}
+
+/* Botones favoritos y borrar */
+.main-fav-btn,
+.main-del-btn {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.95em;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.main-fav-btn {
+  background: #ffd600;
+  color: #333;
+}
+
+.main-del-btn {
+  background: #e53935;
+  color: #fff;
+}

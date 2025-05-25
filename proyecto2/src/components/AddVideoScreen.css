@@ -1,0 +1,32 @@
+.agregar-video-container {
+  max-width: 400px;
+  margin: 32px auto;
+  padding: 24px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.agregar-video-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.agregar-video-input,
+.agregar-video-select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.agregar-video-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
