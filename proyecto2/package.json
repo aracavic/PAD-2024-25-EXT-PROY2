@@ -1,20 +1,17 @@
 {
-  "name": "proyecto2",
+  "name": "proyecto3",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://aracavic.github.io/PAD-2024-25-EXT-PROY2",
   "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
     "axios": "^1.9.0",
+    "cra-template-pwa": "2.0.0",
     "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.6.0",
+    "react-router-dom": "^7.6.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
