@@ -14,11 +14,7 @@ Aplicación web progresiva (PWA) para descubrir, guardar y gestionar enlaces y v
 
 ## Instalación y ejecución
 
-1. Clona el repositorio:
-
-   ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
-   cd tu-repositorio
+1. Descarga el archivo entregado, descomprímelo y ábrelo en VSC.
 
 2. Instala las dependencias:
 
