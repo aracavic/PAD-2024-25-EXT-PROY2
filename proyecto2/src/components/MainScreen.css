@@ -284,6 +284,8 @@
   .main-buttons {
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
   .main-list li {
     flex-direction: column;

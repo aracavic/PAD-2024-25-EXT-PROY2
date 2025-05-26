@@ -17,7 +17,7 @@ const categorias = [
   "SQLite Android"
 ];
 
-const YOUTUBE_API_KEY = "AIzaSyCicZjH6HP1Hc1laFh_VHrnt0hr65Of5cs"; // Tu API Key
+const YOUTUBE_API_KEY = "";
 const DEFAULT_QUERY = "desarrollo web";
 
 function SugerenciasScreen() {
@@ -59,9 +59,7 @@ function SugerenciasScreen() {
 
   const guardarVideo = (video) => {
     const guardados = JSON.parse(localStorage.getItem('videosGuardados') || '[]');
-    // Evita duplicados
     if (!guardados.some(v => v.id.videoId === video.id.videoId)) {
-      // Añade la categoría seleccionada al objeto video
       const videoConCategoria = { ...video, categoria: categoriaSeleccionada };
       guardados.push(videoConCategoria);
       localStorage.setItem('videosGuardados', JSON.stringify(guardados));
